@@ -2,18 +2,17 @@ public class RotateArray {
     public void rotate(int[] nums, int k) {
 
         if (nums.length < 2) {
-            //Do Nothing the Array is only one element
+            // Do Nothing the Array is only one element
         } else if (nums.length < k) {
-            //Check to see if k is larger then the array and update k to k mod array length.
+            // Check to see if k is larger then the array and update k to k mod array
+            // length.
             int new_k = k % nums.length;
             createArray(nums, new_k);
 
         } else {
-            //Run process with no modifications to k
+            // Run process with no modifications to k
             createArray(nums, k);
         }
-
-
 
     }
 
@@ -21,7 +20,7 @@ public class RotateArray {
         int newArrayPosition = 0;
         int start = array.length - k;
         int newArray[] = new int[array.length];
-        for (int i = start; i < array.length; i ++) {
+        for (int i = start; i < array.length; i++) {
             newArray[newArrayPosition] = array[i];
             newArrayPosition = newArrayPosition + 1;
         }

@@ -1,11 +1,10 @@
 public class FizzBuzz {
     public List<String> fizzBuzz(int n) {
         String[] arr = new String[n];
-        for (int i =1 ; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
                 arr[i - 1] = "FizzBuzz";
-            }
-            else if (i % 3 == 0) {
+            } else if (i % 3 == 0) {
                 arr[i - 1] = "Fizz";
             } else if (i % 5 == 0) {
                 arr[i - 1] = "Buzz";
